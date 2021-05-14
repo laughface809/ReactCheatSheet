@@ -1,8 +1,21 @@
 import React, {Component} from "react";
-import HeaderComponent from "../../component/HeaderComponent/HeaderComponent";
-import Product from "../Product/Product";
+/*import HeaderComponent from "../../component/HeaderComponent/HeaderComponent";
+import Product from "../Product/Product";*/
+import LifeCycleComponent from "../LifeCycleComponent/LifeCycleComponent";
 
 class Home extends Component{
+    state = {
+        showComponent: true
+    }
+
+    componentDidMount() {
+        /*setTimeout(() =>{
+            this.setState({
+                showComponent: false
+            })
+        }, 5000)*/
+    }
+
     render() {
         return(
             <>
@@ -24,9 +37,17 @@ class Home extends Component{
                     desc={"This is a great fun"}
                 />
                 <HeaderComponent/>*/}
-                <p>Subscribe</p>
+                {/*<p>Subscribe</p>
                 <hr />
-                <Product />
+                <Product />*/}
+                <p>Life Cycle Component</p>
+                <hr />
+                {
+                    this.state.showComponent
+                        ?
+                        <LifeCycleComponent />
+                        : null
+                }
             </>
         )
     }
