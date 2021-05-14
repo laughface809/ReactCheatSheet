@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 /*import HeaderComponent from "../../component/HeaderComponent/HeaderComponent";
 import Product from "../Product/Product";*/
-import LifeCycleComponent from "../LifeCycleComponent/LifeCycleComponent";
+/*import LifeCycleComponent from "../LifeCycleComponent/LifeCycleComponent";*/
+import BlogPost from "../BlogPost/BlogPost";
 
 class Home extends Component{
     state = {
@@ -40,14 +41,17 @@ class Home extends Component{
                 {/*<p>Subscribe</p>
                 <hr />
                 <Product />*/}
-                <p>Life Cycle Component</p>
+                {/*<p>Life Cycle Component</p>
                 <hr />
                 {
                     this.state.showComponent
                         ?
                         <LifeCycleComponent />
                         : null
-                }
+                }*/}
+                <p>Blog Post</p>
+                <hr />
+                <BlogPost />
             </>
         )
     }
