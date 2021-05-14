@@ -44,3 +44,16 @@
     font-size: 16px;
     color: #61dafb;
 }
+
+.remove{
+    padding: 12px 18px;
+    background: cornflowerblue;
+    color: wheat;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 18px;
+}
+
+.remove:hover{
+    cursor: pointer;
+}
