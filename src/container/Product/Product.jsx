@@ -16,6 +16,7 @@ class Product extends Component{
     render() {
         return(
             <Fragment>
+                <p>Product Component</p>
                 <div className={"header"}>
                     <div className={"logo"}>
                             <img src={"https://www.gavi.org/sites/default/files/background-image/2020/owp-banner.jpg"} alt={""}/>
